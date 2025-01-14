@@ -56,5 +56,6 @@ message UpdateRequest {
 
 message DeleteRequest {
   int64 user_id = 1; // User ID of the user to delete.
+  int32 app_id = 2;
   string token = 3;
 }
