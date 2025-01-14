@@ -57,10 +57,12 @@ message LogoutResponse {
 
 message UpdateRequest {
   int64 id = 1;
-  google.protobuf.StringValue email = 2;
-  google.protobuf.StringValue password = 3;
+  string token = 2;
+  google.protobuf.StringValue email = 3;
+  google.protobuf.StringValue password = 4;
 }
 
 message DeleteRequest {
   int64 user_id = 1; // User ID of the user to delete.
+  string token = 2;
 }
